@@ -9,6 +9,7 @@ int main()
 	printf("1. Play\n2. Difficulty: %d\n3. Quit\n",dif);
 	scanf("%d", choice);
 
+	//test
 	
 	
 	
