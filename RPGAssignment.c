@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int d = 0;
-// I need this cuz im lazy
+// I need this cuz im lazy. This is to set the difficulty modifier.
 
 void Play();
 void Difficulty();
@@ -22,12 +22,13 @@ int main()
 	{
 		case 1:
 			Play();
+			printf("test");
 			break;
 		case 2:
 			Difficulty();
-			break
+			break;
 		case 3:
-			system("exit&quote");
+			printf("Please close the command prompt");
 			break;
 		default:
 			printf("Since you are such a clown I'll assume you meant play.\n");
@@ -45,4 +46,5 @@ void Play()
 
 void Difficulty()
 {
-	printf("You are now changing the difficulty")
+	printf("You are now changing the difficulty");
+}
