@@ -45,9 +45,9 @@ void Play()
 
 void Difficulty()
 {
-	int x
+	int x;
 	printf("You are now changing the difficulty");
-	printf("Please choose a new difficulty of any number below 100")
+	printf("Please choose a new difficulty of any number below 100");
 	scanf("%d", &x);
 	
 	if(x <=100)
