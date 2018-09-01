@@ -16,13 +16,12 @@ int main()
 	printf("Welcome to my game\n");
 	printf("Please choose an option\n");
 	printf("1. Play\n2. Difficulty: %d\n3. Quit\n",d);
-	scanf("%d", choice);
+	scanf("%d", &choice);
 
 	switch(choice)
 	{
 		case 1:
 			Play();
-			printf("test");
 			break;
 		case 2:
 			Difficulty();
