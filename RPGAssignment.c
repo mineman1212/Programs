@@ -1,27 +1,48 @@
 #include <stdio.h>
 
+int d = 0;
+// I need this cuz im lazy
+
+void Play();
+void Difficulty();
+void Quit();
+
+
+
 int main()
 {
-	int dif,choice = 0;
+	int choice = 0;
 	
 	printf("Welcome to my game\n");
 	printf("Please choose an option\n");
-	printf("1. Play\n2. Difficulty: %d\n3. Quit\n",dif);
+	printf("1. Play\n2. Difficulty: %d\n3. Quit\n",d);
 	scanf("%d", choice);
 
-	//test
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	switch(choice)
+	{
+		case 1:
+			Play();
+			break;
+		case 2:
+			Difficulty();
+			break
+		case 3:
+			system("exit&quote");
+			break;
+		default:
+			printf("Since you are such a clown I'll assume you meant play.\n");
+			Play();
+			break;
+	}
 	
 	return 0;
 }
+
+void Play()
+{
+	printf("You are now playing");
+}
+
+void Difficulty()
+{
+	printf("You are now changing the difficulty")
